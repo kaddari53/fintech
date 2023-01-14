@@ -1,0 +1,47 @@
+/* #boxes {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div {
+    float: left;
+    height: 470px;
+    width: auto;
+    padding: 0 10px;
+  }
+  #column1 {
+    background-color: #a1edcc;
+  }
+  #column2 {
+    background-color: #a0e9ed;
+    width: auto;
+  }
+ 
+  h2 {
+    color: #000000;
+    text-align: center;
+  } */
+
+  .forecast {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+    margin: 0.2rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,19 @@
+{% extends "public/templates/public_templates.html" %}
+{% import "macros/input_macros.html" as im %}
+{% block title %}SST & Fire detection{% endblock %}
+{% block main %}
+<div class="container">
+  <div class="row">
+<div class="col">
+  <h1> Login</h1>
+
+   <H1>     </H1>
+  {{ im.input(label="your name", name="name",id="name", placeholder="please inter your name")}}
+  <H1>     </H1>
+  {{ im.input(label="your age", type ="number", name="age",id="age", placeholder="please inter your age")}}
+  <H1>     </H1>
+  {{ im.input(label="your password", type ='password',name="password",id="password", placeholder="please inter your password")}}
+</div>
+</div>
+</div>
+{% endblock %}

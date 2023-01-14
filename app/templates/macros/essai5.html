@@ -1,0 +1,51 @@
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       
+        <meta charset="utf-8">
+        <meta name="author" content="AnikeSadia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="static\css\forms.css">
+   
+        
+    </head>
+{% extends "public/templates/public_templates.html" %}
+
+{% block title %}Site News{% endblock %}
+{% block main %}
+
+    
+    
+    <form action ="/admino" method="POST">
+  <div id="msform">
+    <!-- progressbar -->
+    <!-- <ul id="progressbar">
+      <li class="active">Données</li>
+      
+      <li>Predictions</li>
+      
+    </ul> -->
+    <!-- fieldsets -->
+    <fieldset>
+  
+          </select><br>
+      <label class="label" type="text" name="Panneau"> Choisir la société voulue</label>
+          <select name="comp_select" class="Input">
+                {% for o in data %}
+                <option value="{{ o.Panneau }}">{{ o.Panneau }}</option>
+                {% endfor %}
+              </select><br>
+ 
+      <br><br>
+  
+    <br><button class="next action-button">Submit</button>
+    
+        
+    </fieldset>
+  
+  </div>
+  
+  </form>
+  {% endblock %}
